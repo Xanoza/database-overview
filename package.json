@@ -1,0 +1,30 @@
+{
+  "name": "database-overview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdc-group-4/database-overview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdc-group-4/database-overview/issues"
+  },
+  "homepage": "https://github.com/sdc-group-4/database-overview#readme",
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "dotenv": "^6.2.0",
+    "faker": "^4.1.0",
+    "pg": "^7.8.1"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}

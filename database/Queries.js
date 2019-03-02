@@ -1,0 +1,1 @@
+// -- INSERT INTO listings (listing_name, ratings_num, rating, descript, price_min, price_max) VALUES ('yes', 4, 5, 'is cool like really cool', 12, 25);
