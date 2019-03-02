@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "generate": "node database/generator.js && psql -U lawrencechou < database/schema.sql"
+
   },
   "repository": {
     "type": "git",
