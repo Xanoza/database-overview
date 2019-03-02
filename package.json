@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "generate": "node database/generator.js && psql -U lawrencechou < database/schema.sql"
+    "gen": "node generator.js",
+    "postseed": "psql -U lawrencechou < postgresql/schema.sql",
+    "cassseed": "cqlsh < cassandra/schema.cql",
+    "cassgenseed" : "node generator.js && cqlsh < cassandra/schema.cql",
+    "postgenseed": "node generator.js && psql -U lawrencechou < postgresql/schema.sql"
 
   },
   "repository": {
