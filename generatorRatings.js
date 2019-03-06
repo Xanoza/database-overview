@@ -52,4 +52,4 @@ const writeRatings = (dest, data, num) => {
 
 }
 
-writeRatings('dataRatings.csv', data, 90000000);
+writeRatings('dataRatingstest.csv', data, 10);

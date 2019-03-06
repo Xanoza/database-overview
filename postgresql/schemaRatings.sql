@@ -19,3 +19,4 @@ CREATE TABLE ratings (
 \COPY ratings(id, rest_id, username, ratings, gender) FROM 'dataRatings.csv' DELIMITER ',' CSV HEADER;
 
 CREATE INDEX restaurants ON ratingstest(rest_id);
+
