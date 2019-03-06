@@ -9,7 +9,7 @@ CREATE DATABASE overview;
 DROP TABLE IF EXISTS listings;
 
 CREATE TABLE listings (
-  id VARCHAR (10) PRIMARY KEY,
+  id BIGINT PRIMARY KEY,
 	res_name TEXT,
 	ratings_num integer NOT NULL,
 	rating integer NOT NULL,
@@ -29,6 +29,8 @@ CREATE TABLE listings (
 	phone_number VARCHAR(25),
 	street_address TEXT
 );
+
+
 
 
 
