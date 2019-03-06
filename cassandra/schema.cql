@@ -1,9 +1,12 @@
 
 DROP KEYSPACE IF EXISTS overview;
 
+
 CREATE KEYSPACE overview WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
 
 USE overview;
+
+tracing on
 
 DROP TABLE IF EXISTS listings;
 

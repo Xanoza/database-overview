@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "gen": "node generator.js",
+    "genRatings": "node generatorRatings.js",
+    "ratingsseed" : "psql -U lawrencechou < postgresql/schemaRatings.sql",
     "postseed": "psql -U lawrencechou < postgresql/schema.sql",
     "cassseed": "cqlsh < cassandra/schema.cql",
     "cassgenseed" : "node generator.js && cqlsh < cassandra/schema.cql",
