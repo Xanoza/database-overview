@@ -1,7 +1,7 @@
 var fs = require("fs");
 var faker = require('faker');
 // var csvWriter = require('csv-write-stream');
-var headers = ['id','res_name', 'ratings_num', 'rating', 'descript', 'price_min', 'price_max', 'food_type','city', 'lunch_hrs', 'dinner_hrs','dress_code', 'payment_options', 'chef', 'entertainment', 'additional_info', 'website', 'phone_number', 'street_address']
+var headers = ['res_name', 'ratings_num', 'rating', 'descript', 'price_min', 'price_max', 'food_type','city', 'lunch_hrs', 'dinner_hrs','dress_code', 'payment_options', 'chef', 'entertainment', 'additional_info', 'website', 'phone_number', 'street_address']
 
 var foods = ['Mexican', 'Italian', 'Korean', 'American', 'Russian', 'Chilean', 'Chinese', 'Japanese', 'Indonesian', 'German']
 
@@ -9,7 +9,7 @@ var dress = ['nude', 'Business Casual', 'Casual', 'Semi-Formal', 'Beach Formal']
 
 var payment = ['Venmo', 'Cash', 'Credit','IOU']
 
-var id = 1
+
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -47,7 +47,7 @@ var data = () => {
   const phone_number = faker.phone.phoneNumber()
   const street_address = faker.address.streetAddress()
 
-  return `${id++},'${res_name}',${ratings_num},${rating}, '${descript}', ${price_min}, ${price_max}, ${food_type},'${city}', ${lunch_hrs}, ${dinner_hrs}, ${dress_code}, ${payment_options}, '${chef}', '${entertainment}', '${additional_info}', '${website}', ${phone_number}, '${street_address}'\n`
+  return `'${res_name}',${ratings_num},${rating}, '${descript}', ${price_min}, ${price_max}, ${food_type},'${city}', ${lunch_hrs}, ${dinner_hrs}, ${dress_code}, ${payment_options}, '${chef}', '${entertainment}', '${additional_info}', '${website}', ${phone_number}, '${street_address}'\n`
 
 
 }

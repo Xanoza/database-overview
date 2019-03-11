@@ -4,8 +4,8 @@ var fs = require("fs");
 var faker = require('faker');
 
 var genderize = ['M','F']
-var headers = ['id','rest_id', 'username', 'ratings', 'gender']
-var id = 1
+var headers = ['rest_id', 'username', 'ratings', 'gender']
+
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -17,7 +17,7 @@ var data = () => {
   const ratings = getRndInteger(1,5)
   const gender = genderize[getRndInteger(0,1)]
 
-  return `${id++},${rest_id},'${username}',${ratings},'${gender}'\n`
+  return `${rest_id},'${username}',${ratings},'${gender}'\n`
 }
 
 const writeRatings = (dest, data, num) => {
@@ -52,4 +52,4 @@ const writeRatings = (dest, data, num) => {
 
 }
 
-writeRatings('dataRatingstest.csv', data, 10);
+writeRatings('dataRatings.csv', data, 90000000);
